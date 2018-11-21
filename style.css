@@ -1,0 +1,147 @@
+html,
+body,
+div,
+p,
+ul,
+nav {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #252627;
+  font-family: 'Slabo 27px', serif;
+  margin: 0;
+
+}
+
+a {
+  color: #944c46;
+}
+
+nav {
+  top: 20%;
+  position: fixed;
+  /* border: 2px solid green; */
+  /* width: 200px; */
+}
+
+/* .navbar{
+ float: left;
+ position: absolute;
+ background-color:#181818;
+ width: 120px;
+ height: 100%;
+ min-height: 500px;
+ opacity: .8;
+ padding: 0;
+ margin: 0;
+ left: 0;
+ top: 0;
+ 
+}  */
+.navbar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: #181818;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  color: #944c46;
+  
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #332e2e;
+  color: white;
+}
+
+.navbar a i {
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 58px;
+  color: #f88379;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px #944c46;
+}
+
+.main-page {
+  margin-left: 10%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.intro {
+  font-size: 3em;
+  line-height: 35px;
+  color: #fff;
+  overflow: hidden;
+  min-height: 600px;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.intro h1 {
+  transform: translateY(-50%)
+}
+ 
+.intro a:hover {
+  background-color: #944c46;
+  color: white;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile {
+  display: inline-block;
+  margin-top: 34px;
+  width: 200px;
+}
+.box {
+  position: absolute;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+
+.box>h1>span {
+  font-style: italic;
+}
+
+.contact {
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: 12px;
+  border-radius: 3px;
+  animation: myanim2 1s 1.8s backwards;
+  color: #944c46;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 1px solid #944c46;
+  padding: 6px 6px;
+  text-transform: uppercase;
+}
+
+.social {
+  padding: 7px 0;
+  display: block;
+  font-size: 25;
+  line-height: 16px;
+}
