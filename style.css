@@ -78,6 +78,19 @@ nav {
   text-align: center;
   margin-top: 50px;
   text-shadow: 2px 2px #944c46;
+
+  animation:spin 4s linear infinite;
+  -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+     transition-property: transform;
+
+     overflow:hidden;
 }
 
 .main-page {
@@ -104,16 +117,22 @@ nav {
   background-color: #944c46;
   color: white;
 }
-
+.profile {
+  display: inline-block;
+  margin-top: 34px;
+  /* width: 200px; */
+  
+}
+.circle{
+  float: left;
+  shape-outside: circle();
+  vertical-align: top;
+  
+}
 .profile img {
   border-radius: 50%;
 }
 
-.profile {
-  display: inline-block;
-  margin-top: 34px;
-  width: 200px;
-}
 .box {
   position: absolute;
   display: inline-block;
@@ -139,6 +158,9 @@ nav {
   text-transform: uppercase;
 }
 
+.positions {
+  color:green;
+}
 .social {
   padding: 7px 0;
   display: block;
