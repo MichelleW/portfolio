@@ -97,6 +97,7 @@ nav {
   margin-left: 10%;
   padding: 1px 16px;
   height: 1000px;
+  color:white;
 }
 
 .intro {
@@ -166,4 +167,18 @@ nav {
   display: block;
   font-size: 25;
   line-height: 16px;
+}
+
+/* about section */
+#about p > span{
+  font-size: 2rem;
+  color:#944c46;
+}
+
+.show{
+  visibility: visible
+}
+
+.hide{
+  visibility: hidden;
 }
