@@ -67,6 +67,9 @@
     top: 10px;
     position: relative;
     display: block;
+    margin: 0 auto;
+    /* border:2px solid red; */
+    margin-bottom: 20px;
   }
 
   .navbar nav a {
@@ -80,10 +83,6 @@
     display: block;
     margin-top: 0;
   }
-  .box{
-    text-align: center;
-    display: block; 
-    left: 0;
-  }
+  
 
 }

@@ -66,7 +66,7 @@ nav {
 }
 
 .navbar a:hover:not(.active) {
-  background-color: #332e2e;
+  /* background-color: #332e2e; */
   color: white;
 }
 
@@ -101,18 +101,22 @@ nav {
   height:1500px;
   color:white; 
   padding-bottom: 200px;
+  /* background: url(img/portfolio_bg.jpg) no-repeat;
+  background-size: cover; */
+
 }
 
 
 
 .intro {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 35px;
   color: #fff;
   overflow: hidden;
   min-height: 600px;
   margin-top: 20%;
   margin-left: 10%;
+  margin-bottom: 20px;
 }
 
 .intro h1 {
@@ -173,6 +177,7 @@ nav {
   display: block;
   font-size: 25;
   line-height: 16px;
+  text-align: center;
 }
 
 /* about section */
@@ -252,13 +257,7 @@ nav {
 .des i{
   vertical-align: middle;
   padding-right: 5px;
-}
-
-
-
-
-
-
+} 
 
 .green{
   border: 1px solid green;
@@ -266,4 +265,26 @@ nav {
 
 .red{
   border:2px solid red;
+}
+
+/* chatbot bubble  */
+.chatbot {
+	position: relative;
+	background: #4b5b6b;
+	border-radius: .4em;
+}
+
+.chatbot:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 22%;
+	width: 0;
+	height: 0;
+	border: 29px solid transparent;
+	border-left-color: #4b5b6b;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -14.5px;
+	margin-right: -29px;
 }
