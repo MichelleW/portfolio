@@ -24,8 +24,6 @@ a {
 nav {
   top: 20%;
   position: fixed;
-  /* border: 2px solid green; */
-  /* width: 200px; */
 }
  
 .navbar {
@@ -52,7 +50,7 @@ nav {
 }
 
 .navbar a:hover:not(.active) {
-  background-color: #332e2e;
+  /* background-color: #332e2e; */
   color: white;
 }
 
@@ -92,13 +90,14 @@ nav {
 
 
 .intro {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 35px;
   color: #fff;
   overflow: hidden;
   min-height: 600px;
   margin-top: 20%;
   margin-left: 10%;
+  margin-bottom: 20px;
 }
 
 .intro h1 {
