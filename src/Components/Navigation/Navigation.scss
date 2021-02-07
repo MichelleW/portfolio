@@ -1,0 +1,75 @@
+.navigation {
+  min-height: 74px;
+  background-color: var(--grey);
+  color: white;
+  top: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+
+    margin-top: 15px;
+
+    a.logo {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      background-color: inherit;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--light);
+
+      >i {
+        margin-left: 5px;
+        text-decoration: none;
+
+        &:hover {
+           color: var(--light);
+          text-decoration: none;
+        } 
+      } 
+    }
+
+    a {
+      margin: 0 5px;
+      border-radius: 5px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      // background-color: var(--icon-bg);
+      color: var(--light);
+      text-decoration: none;
+
+      .Switchmode {
+        :hover {
+          opacity: 1;
+          text-decoration: none;
+        }
+      }
+
+      :visited {
+        color: var(--white);
+      }
+
+      :hover {
+        opacity: .5;
+        color: #1D1F29;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+
+}
