@@ -4,7 +4,7 @@ const About = (props) => {
   return (
     <div className="container">
       <h1>About Me</h1>
-      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt odit assumenda quis, temporibus ipsum eius, ratione magnam, doloribus eligendi velit ad repellat quasi veritatis rerum? Ex quia nemo ut alias.</div>
+      <div>Hello. Michelle is a Frontend Developer in San Francisco Bay Ara. She is experienced in UX, frontend technologies, and DOM manipulation. Skilled in taking products from inception through delivery, turning designs into fully functional web applications.</div>
     </div>
   )
 }

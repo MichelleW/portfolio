@@ -1,83 +1,105 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+@import "./variables.scss";
+// $light: #369;
+// $head-light: #313131;
+// $grey: #f5f5f7;
+// $skill-grey: #c7d0ff;
+// $dark: #fbfbfd;
+// $light-purple: #f8f8f8;
+// $shadow: -1px 3px 12px 0px #8b8b8b21;
+// $icon-bg: rgba(209, 209, 209, 0.233);
+// $input: #eeeeee;
+// $light-purple: #6d83f2;
+// $shadow: none;
+// $theme: #eeeeee;
+// $gradient: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+// $gradient-light: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
+// $gradient-grey: $gradient;
+// $input: #f0f0f0;
+// $content: #f5f5f7;
+// $text: #369;
 
-:root {
-  --light: #369;
-  --head-light: #313131;
-  --grey: #f5f5f7;
-  --gradient-grey: var(--gradient);
-  --skill-grey: #c7d0ff;
-  --dark: #fbfbfd;
-  --light-purple: #f8f8f8;
-  --shadow: -1px 3px 12px 0px #8b8b8b21;
-  --icon-bg: rgba(209, 209, 209, 0.233);
-  --input: #eeeeee;
-  --light-purple: #6d83f2;
-  --shadow: none;
-  --theme: #eeeeee;
-  --gradient: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
-  --gradient-light: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
-  --input: #f0f0f0;
-  --content: #f5f5f7;
-  --text: #369;
+// $base-color: #c6538c;
+
+$dark-theme: true !default;
+$primary-color: #f8bbd0 !default;
+$accent-color: #6a1b9a !default;
+
+@if $dark-theme {
+  $white: #f8f8f8;
+  $light: #f8f8f8;
+  $head-light: #f8f8f8;
+  $grey: #232323;
+  $gradient-grey: #232323;
+  $skill-grey: #272727;
+  $theme: #369;
+  $dark: #000;
+  $purple: #6d83f2;
+  $icon-bg: #5555556e;
+  $content: #f5f5f7;
+  $text: #313131;
 }
 
-.dark {
-  --white: #f8f8f8;
-  --light: #f8f8f8;
-  --head-light: #f8f8f8;
-  --grey: #232323;
-  --gradient-grey: #232323;
-  --skill-grey: #272727;
-  --theme: #369;
-  --dark: #000;
-  --purple: #6d83f2;
-  --icon-bg: #5555556e;
-  --content: #f5f5f7;
-  --text: #313131;
-}
+// .dark {
+//   $white: #f8f8f8;
+//   $light: #f8f8f8;
+//   $head-light: #f8f8f8;
+//   $grey: #232323;
+//   $gradient-grey: #232323;
+//   $skill-grey: #272727;
+//   $theme: #369;
+//   $dark: #000;
+//   $purple: #6d83f2;
+//   $icon-bg: #5555556e;
+//   $content: #f5f5f7;
+//   $text: #313131;
+// }
+
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Barlow Condensed',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   display: flex;
   flex-direction: column;
-  // background-color: var(--light);
 
   .container {
-    min-height: 60vh;
+    // min-height: 60vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 90px;
-    color: var(--text);
+    color: $text;
   }
 
   .home {
-    background-color: var(--dark);
+    background-color: $dark;
     width: 100%;
     margin: 0 auto;
 
 
-
     .jumbotron {
-      background: var(--dark);
-      //  url(./triangle.svg) no-repeat right;
+      background: $dark;
       width: 70%;
       margin: 0 auto;
       margin-top: 50px;
-      min-height: 600px;
       overflow: hidden;
       padding-top: 10%;
       background-size: 40%;
-      color: var(--light);
+      color: #fff;
+      height: 700px;
+
+      .container {
+        width: 100%;
+        color: #fff;
+      }
 
       h1 {
-        font-size: 60px; 
+        font-size: 60px;
       }
 
       .product-name {
@@ -102,10 +124,10 @@ body {
   }
 
   .footer {
-    background-color: var(--grey);
+    background-color: $grey;
     height: 20vh;
     width: 100%;
-    color: var(--light);
+    color: $light;
     // position: fixed;
     // bottom: 0;
 
@@ -138,7 +160,7 @@ body {
     .item {
       width: 50%;
       min-height: 550px;
-      border: 2px solid var(--purple);
+      border: 2px solid $purple;
       background-color: #ddd;
 
     }

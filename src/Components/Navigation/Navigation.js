@@ -11,11 +11,10 @@ const Navigation = () => {
       <nav>
         <Link to="/" className="logo">
           <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Code/
-           <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </Link> 
+        Code /<i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </Link>
         <Link to="/blog">/ Blog</Link>
-        <a ><Switchmode /></a>
+        <Link to="/about">/ About</Link>
       </nav>
     </div>
   )
