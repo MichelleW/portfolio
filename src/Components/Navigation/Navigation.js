@@ -10,8 +10,8 @@ const Navigation = () => {
     <div className="navigation">
       <nav>
         <Link to="/" className="logo">
-          <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Code /<i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <i className="fa fa-chevron-left" aria-hidden="true"></i>
+        Code /<i className="fa fa-chevron-right" aria-hidden="true"></i>
         </Link>
         <Link to="/blog">/ Blog</Link>
         <Link to="/about">/ About</Link>
